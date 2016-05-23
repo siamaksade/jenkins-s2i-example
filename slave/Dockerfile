@@ -17,7 +17,7 @@ RUN curl -sL -o /tmp/epel-release-latest-7.noarch.rpm \
     chmod -R g+w /var/lib/jenkins
 
 # Copy the entrypoint
-COPY contrib/openshift/* /var/lib/jenkins/
+COPY configuration/* /var/lib/jenkins/
 USER 1001
 
 # Run the JNLP client by default

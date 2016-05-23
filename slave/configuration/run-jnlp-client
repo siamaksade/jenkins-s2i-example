@@ -7,7 +7,7 @@
 # The directory that Jenkins will execute the builds and store cache files.
 # The directory has to be writeable for the user that the container is running
 # under.
-export JENKINS_HOME=/opt/app-root/jenkins
+export JENKINS_HOME=/var/lib/jenkins
 
 # Setup nss_wrapper so the random user OpenShift will run this container
 # has an entry in /etc/passwd.
