@@ -4,5 +4,5 @@ An example demonstrating Jenkins S2I features for installing plugins, configurin
 
 
 # Instructions
-$ oc new-app jenkins~https://github.com/siamaksade/jenkins-s2i-example.git --name=ci-jenkins
+$ oc new-app jenkins~https://github.com/siamaksade/jenkins-s2i-example.git --name=ci-jenkins --context-dir=master
 $ oc expose svc/ci-jenkins --name=jenkins
