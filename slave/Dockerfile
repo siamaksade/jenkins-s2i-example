@@ -8,6 +8,7 @@ RUN curl -sL -o /tmp/epel-release-latest-7.noarch.rpm \
     rpm -Uvh /tmp/epel-release-latest-7*.rpm && \
     export INSTALL_PKGS="nss_wrapper java-1.8.0-openjdk-headless \
       java-1.8.0-openjdk-devel nss_wrapper gettext tar git" && \
+    yum clean all && \
     yum install -y --setopt=tsflags=nodocs install $INSTALL_PKGS && \
     rpm -V $INSTALL_PKGS && \
     yum clean all && \
