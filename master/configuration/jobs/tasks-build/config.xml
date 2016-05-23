@@ -44,7 +44,7 @@
   <disableTriggerDownstreamProjects>false</disableTriggerDownstreamProjects>
   <blockTriggerWhenBuilding>true</blockTriggerWhenBuilding>
   <settings class="jenkins.mvn.FilePathSettingsProvider">
-    <path>/var/lib/jenkins/maven/settings.xml</path>
+    <path>/opt/app-root/jenkins/maven/settings.xml</path>
   </settings>
   <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
   <reporters/>
