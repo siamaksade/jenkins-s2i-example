@@ -20,6 +20,7 @@
     <submoduleCfg class="list"/>
     <extensions/>
   </scm>
+  <assignedNode>jdk8</assignedNode>
   <canRoam>true</canRoam>
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
