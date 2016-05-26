@@ -13,7 +13,7 @@ An example demonstrating Jenkins S2I features for installing plugins, configurin
 2. Give the Jenkins Pod service account rights to do API calls to OpenShift. This allows us to do the Jenkins Slave image discovery automatically.
 
   ```
-  $ oc policy add-role-to-user edit system:serviceaccount:ci:default -n ci
+  $ oc policy add-role-to-user edit -z default -n ci
   ```
 
 3. Install the provided OpenShift templates:
